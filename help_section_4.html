@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+		<title>Tanda Player - User Guide OnLine</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+* {
+    color: #606060 !important;
+}
+body {
+	background-color: black;
+}
+section .notranslate {
+	margin: 0.15em;
+	font-style: inherit;
+	font-size: inherit;
+}
+
+img {
+	margin-left: 1em;
+}
+
+header, section {
+	border-radius: 15px;
+	background-color: white;
+	padding: 1em;
+	max-width: 1200px;
+	margin: 1em auto;
+}
+
+header ul {
+	    list-style-position: inside;
+}
+header li a {
+	text-decoration: underline !important;
+}
+
+header h1 {
+	font-family: myFirstFont;
+    font-size: 90px;
+    margin: 0.1em;
+}
+
+section * {
+	//font-family: Cambria!important;
+}
+
+section h1 {
+	font-size: 1.75em;
+}
+section h2, section h3 {
+	font-size: 1.25em;
+}
+
+#wrapper {
+}
+
+.TPUG_navigation {
+	margin: 1em;
+}
+
+.TPUG_navigation a{
+	font-size: 1.2em;
+	margin: 1em;
+}
+
+header li {
+	list-style-type: disc !important;
+}
+
+li {
+	list-style: none;
+}
+
+section a:link, section a:visited {
+	color: blue !important;
+}
+section li a:link, section a:visited {
+	text-decoration: none !important;
+}
+span.index_1 {
+	font-size: 1.1em;
+	line-height: 2.4em;
+	margin: 0.3em;
+	margin-top: 1em;
+	font-weight: bolder;
+}
+span.index_2 {
+	font-size: 1em;
+	line-height: 1.75em;
+	margin-left: 2em;
+}
+span.index_3 {
+	font-size: 0.9em;
+	line-height: 1.5em;
+	margin-left: 4em;
+}
+
+h1 {
+	margin-top: 0px !important;
+}
+
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+			</header>
+			<script src="../js/header.js" type="text/javascript"></script>
+			<section>
+				<div class="TPUG_navigation">
+					<a href="help_section_3.html">&lt;&lt;&lt; Previous Section</a>
+					<a href="help_section_0.html">Index</a>
+					<a href="help_section_5.html">Next Section &gt;&gt;&gt;</a>
+				</div>
+				<h1><a name="_Toc432261533"><span lang=EN-US>Backups &#8211; What to backup</span></a></h1>
+
+<p class=UserGuide>It is recommended that your main music library is NOT the
+USB memory stick! Instead you should maintain a proper library of files
+elsewhere and take a copy to use on the USB memory stick. </p>
+
+<p class=UserGuide>If the <span class="notranslate">Tanda Player</span> does not start properly after some time
+of waiting get the USB device checked out &#8211; it is likely to be currently
+‘Read-Only’ and this prevents the <span class="notranslate">Tanda Player</span> from working.</p>
+
+<p class=UserGuide>By keeping the folder structure the same between the master
+library and the USB device there is no additional need to back these files up
+as they can always be re-copied &#8211; and copying 100Gbytes of files takes a
+long time!</p>
+
+<p class=UserGuide>The only files you really need to periodically take a copy
+of are all the “*.dat” or “*.updates” files that are created and used at the
+top level of the USB memory stick. These are plain text JSON format(ish) data
+files which the system uses all the time. Some files are just fragments of data
+waiting to be recombined with the main library files.<span
+style="mso-spacerun:yes">  </span>The <span class="notranslate">Tanda Player</span> automatically backs up these
+files each time it starts up saving the last sessions data before making any
+new changes. </p>
+
+<p class=UserGuide>However, USB memory sticks do not last forever and combined
+with the <span class="notranslate">Tanda Player</span>s heavy use of them the backup the <span class="notranslate">Tanda Player</span> creates on
+the USB is not the best place and so you should copy all the files at the top
+level of the USB memory stick onto a PC or another USB device.<span
+style="mso-spacerun:yes">  </span>You could also copy the last 10 backups
+folder “tp_backup”.</p>
+
+<p class=UserGuide>The following image shows the backup folder’s contents and
+has expanded backup 4 to show the key files that get backed up. </p>
+
+<p class=UserGuide>The last back up folder used is stored as a simple number in
+the “last_backup.txt” file. If corruption has occurred there is a strong
+likelihood that the previous backup will be corrupt and so you may wish to go
+back one or two to find a good working version to recover from.</p>
+
+<p class=UserGuide>To recover, simply copy these files to the top level again
+and re-start the <span class="notranslate">Tanda Player</span>.</p>
+
+<p class=UserGuide>Note that when the 10<sup>th</sup> backup is to be created
+it overwrites the first one and so it goes on like this forever.<span
+style="mso-spacerun:yes">  </span>So if the last backup taken is number one
+then the previous one is number 9 and before that 8 etc.</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1201" type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-04 at 20.54.04.png"
+ style='width:413pt;height:301pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image009.png" o:title="Screen Shot 2018-04-04 at 20.54.04.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=415 height=303
+src="TPUG_files/image010.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-04 at 20.54.04.png"
+v:shapes="_x0000_i1201"><![endif]></span></p>
+
+<p class=UserGuide>Once your library has stabilized it may be worthwhile taking
+a complete copy onto a second USB memory stick so that you can always swap them
+over should one start to play up &#8211; and it will.</p>
+
+<p class=UserGuide>The <span class="notranslate">Tanda Player</span> is a real computer and as such it does not
+like it when power is just disconnected because it can be holding some
+information in memory that will be copied to the USB device at some point. If
+the power is removed, these files can be left in a corrupted state.<span
+style="mso-spacerun:yes">  </span>For this reason, make sure you</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>ALWAYS USE THE POWER OFF BUTTON ON THE MAIN HOME PAGE<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1200" type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-04 at 20.41.05.png"
+ style='width:64pt;height:67pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image011.png" o:title="Screen Shot 2018-04-04 at 20.41.05.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=66 height=69
+src="TPUG_files/image012.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-04 at 20.41.05.png"
+v:shapes="_x0000_i1200"><![endif]></span></p>
+
+<p class=UserGuide>Using this button to stop will copy any cached data to disk
+and then safely un-mount the USB memory stick so that is ready to use in
+another computer or next time you start the <span class="notranslate">Tanda Player</span>.<span
+style="mso-spacerun:yes">  </span></p>
+
+<p class=UserGuide>The shutdown process takes about 25 seconds after this
+button is pressed. </p>
+
+<p class=UserGuide>A 25 second countdown is provided to help ensure you do not
+disconnect too early!<span style="mso-spacerun:yes">  </span></p>
+
+<p class=UserGuide>Disconnecting before full shutdown has occurred may result
+in corruption of your USB device.</p>
+
+
+				<div class="TPUG_navigation">
+					<a href="help_section_3.html">&lt;&lt;&lt; Previous Section</a>
+					<a href="help_section_0.html">Index</a>
+					<a href="help_section_5.html">Next Section &gt;&gt;&gt;</a>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

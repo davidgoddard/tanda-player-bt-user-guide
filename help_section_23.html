@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+		<title>Tanda Player - User Guide OnLine</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+* {
+    color: #606060 !important;
+}
+body {
+	background-color: black;
+}
+section .notranslate {
+	margin: 0.15em;
+	font-style: inherit;
+	font-size: inherit;
+}
+
+img {
+	margin-left: 1em;
+}
+
+header, section {
+	border-radius: 15px;
+	background-color: white;
+	padding: 1em;
+	max-width: 1200px;
+	margin: 1em auto;
+}
+
+header ul {
+	    list-style-position: inside;
+}
+header li a {
+	text-decoration: underline !important;
+}
+
+header h1 {
+	font-family: myFirstFont;
+    font-size: 90px;
+    margin: 0.1em;
+}
+
+section * {
+	//font-family: Cambria!important;
+}
+
+section h1 {
+	font-size: 1.75em;
+}
+section h2, section h3 {
+	font-size: 1.25em;
+}
+
+#wrapper {
+}
+
+.TPUG_navigation {
+	margin: 1em;
+}
+
+.TPUG_navigation a{
+	font-size: 1.2em;
+	margin: 1em;
+}
+
+header li {
+	list-style-type: disc !important;
+}
+
+li {
+	list-style: none;
+}
+
+section a:link, section a:visited {
+	color: blue !important;
+}
+section li a:link, section a:visited {
+	text-decoration: none !important;
+}
+span.index_1 {
+	font-size: 1.1em;
+	line-height: 2.4em;
+	margin: 0.3em;
+	margin-top: 1em;
+	font-weight: bolder;
+}
+span.index_2 {
+	font-size: 1em;
+	line-height: 1.75em;
+	margin-left: 2em;
+}
+span.index_3 {
+	font-size: 0.9em;
+	line-height: 1.5em;
+	margin-left: 4em;
+}
+
+h1 {
+	margin-top: 0px !important;
+}
+
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+			</header>
+			<script src="../js/header.js" type="text/javascript"></script>
+			<section>
+				<div class="TPUG_navigation">
+					<a href="help_section_22.html">&lt;&lt;&lt; Previous Section</a>
+					<a href="help_section_0.html">Index</a>
+					
+				</div>
+				<h1><a name="_Toc432261604"><span style='mso-ansi-language:EN-GB'>Tanda
+Player’s Duplicate Song Viewer</span></a><span style='mso-ansi-language:EN-GB'><o:p></o:p></span></h1>
+
+<h2><a name="_Toc432261605"><span style='mso-ansi-language:EN-GB'>WARNING</span></a><span
+style='mso-ansi-language:EN-GB'><o:p></o:p></span></h2>
+
+<p class=UserGuide>Do not attempt to run this program whilst either loading new
+songs into the library or whilst trying to use any other <span class="notranslate">Tanda Player</span>
+application.<span style="mso-spacerun:yes">  </span>Only use when the system is
+stable and idle. Make sure you have stopped playing any music.</p>
+
+<p class=UserGuide>This application will not work well if your music collection
+is mostly modern recordings (as a result of modern recording practices) &#8211;
+but older recordings do work well!</p>
+
+<p class=UserGuide>It is possible to switch songs in tandas with this
+application regardless of whether you then proceed to delete any files &#8211;
+the Tanda song switch is not dependent upon any other actions in this
+application.</p>
+
+<h2><a name="_Toc432261606"><span style='mso-ansi-language:EN-GB'>Description</span></a><span
+style='mso-ansi-language:EN-GB'><o:p></o:p></span></h2>
+
+<p class=UserGuide>This is supplied as is. Try it &#8211; if it works for you
+then <span lang=EN-US style='font-family:"MS Mincho";mso-ascii-font-family:
+bodyLightFont;mso-fareast-font-family:"MS Mincho";mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:bodyLightFont'>“</span>good<span lang=EN-US
+style='font-family:"MS Mincho";mso-ascii-font-family:bodyLightFont;mso-fareast-font-family:
+"MS Mincho";mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:bodyLightFont'>”</span>
+otherwise don<span lang=EN-US style='font-family:"MS Mincho";mso-ascii-font-family:
+bodyLightFont;mso-fareast-font-family:"MS Mincho";mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:bodyLightFont'>’</span>t use it.</p>
+
+<p class=UserGuide>This application tries to find the same recording of a song
+in different files.<span style="mso-spacerun:yes">  </span>Once found, the user
+may remove unwanted versions of the song. If this song is in a Tanda already,
+the user is prompted to find a replacement song from the other recordings to
+keep the Tanda valid. Playlists are not updated!</p>
+
+<p class=UserGuide>This application is offered as an optional use utility only.
+It is not a requirement that it is used.</p>
+
+<p class=UserGuide>Too many duplicate songs slow down the user whilst
+classifying their collection because they will have to listen to and classify
+the same recordings over and over again with no real benefit. This utility may
+help in locating these duplicates early enough that you do not need to classify
+the duplicated songs.</p>
+
+<p class=UserGuide>The approach used is simple enough for the computer inside
+the <span class="notranslate">Tanda Player</span> combined with the power of the web Browser on your PC or
+laptop to perform. The simple approach is, as a consequence, error prone and
+will identify possible matches that are not matches at all. However, the results
+are quite good and may be useful in general even though it may report
+significant numbers of false matches.</p>
+
+<p class=UserGuide>The algorithm is often able to spot the same recording even
+though they have been encoded in different file formats such as MP3 or FLAC and
+can even show up matches on recordings where the re-mastering process in the
+recording studio have changed the playback speed of the recording to make the
+tempo match some ideal or where the sound has been modified to remove hiss or
+similar artefacts in the original.</p>
+
+<p class=UserGuide>The algorithm essentially “counts how many pixels differ
+between the audio waveform files” that represent the song.<span
+style="mso-spacerun:yes">  </span>It uses a few tricks such as
+limited-time-warping to try to match up the waveforms as best as it can.<span
+style="mso-spacerun:yes">  </span>However, clearly two waveforms may differ by
+the same number of pixels but belong to very different songs.<span
+style="mso-spacerun:yes">  </span>Hopefully this is obvious to the user when it
+occurs and it should be ignored.</p>
+
+<p class=UserGuide>Recording techniques have changed a lot recently with the
+use of computers in the recording studio. This application works reasonably
+well on “old” Tango recordings where the waveforms are dynamic and shapely. It
+does not work at all well on modern recordings where sound engineers have used
+audio-processing techniques to get the maximum volume out of a song and which
+results in quite solid looking waveforms.</p>
+
+<p class=UserGuide>A usable waveform has lots of variation like this one:</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_158" o:spid="_x0000_i1039"
+ type="#_x0000_t75" style='width:267pt;height:68pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image341.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=269 height=70
+src="TPUG_files/image342.png" v:shapes="Picture_x0020_158"><![endif]></span></p>
+
+<p class=UserGuide>An unusable waveform &#8211; and one which cannot be easily
+compared accurately to other similar waveforms &#8211; looks like this:</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_159" o:spid="_x0000_i1038"
+ type="#_x0000_t75" style='width:263pt;height:66pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image343.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=265 height=68
+src="TPUG_files/image344.png" v:shapes="Picture_x0020_159"><![endif]></span></p>
+
+<p class=UserGuide>As a downside of the compromises used to develop the
+algorithm so that it can run in the <span class="notranslate">Tanda Player</span> in a reasonable time frame,
+the algorithm will make some invalid matches and some songs will look similar
+to a very large number of other songs as far as the system is concerned.<span
+style="mso-spacerun:yes">  </span>When a large number of songs appear to match
+one song it is very unlikely this is true - however, it is often useful to look
+down the list of these matches as within the list there may be pairs of songs
+which are duplicates even if they are hidden among other invalid matches.<span
+style="mso-spacerun:yes">  </span>In other words, when there are invalid
+matches among plausible matches, just ignore the invalid ones. </p>
+
+<p class=UserGuide>If you find the results useful, use them, if you do not,
+then don’t use it.<span style="mso-spacerun:yes">  </span>Other software tools
+are available that attempt to do this sort of detection using sophisticated
+algorithms but these require the power of desktop computers to work &#8211; the
+<span class="notranslate">Tanda Player</span> is just not powerful enough.</p>
+
+<h2><a name="_Toc432261607"><span style='mso-ansi-language:EN-GB'>Requirements</span></a><span
+style='mso-ansi-language:EN-GB'><o:p></o:p></span></h2>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l30 level1 lfo29'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>A backup &#8211; please backup your USB device
+to another computer or disk before starting to remove files!</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l30 level1 lfo29'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Good headphones connected directly to the Tanda
+Player’s output. Or connect the <span class="notranslate">Tanda Player</span> to a good sound system and turn
+the volume up. The goal is to be able to hear subtle differences in sound
+quality (changes in Hiss levels or quality of low notes or quality of the audio
+attacks as dramatic pieces are played and stereo versus mono recordings) which
+is not possible at low levels and on poor quality sound systems.</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l30 level1 lfo29'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>A good size computer monitor makes reading the
+results easier</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l30 level1 lfo29'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>A powerful desktop computer makes the processing
+faster</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l30 level1 lfo29'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>The waveform files are approximately 6 Kbytes in
+size. Your USB device will need enough free disk space to hold one waveform
+file for every music file you have. As a rough guide, a collection of 10,000 songs
+will require 60 Mbytes.</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l30 level1 lfo29'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>To save the signatures of these waveforms as
+well as the current state of the application on the USB device requires an
+additional 30 Mbytes.</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l30 level1 lfo29'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Lots of time &#8211; The waveforms can take
+several seconds (up to 10 seconds) to produce for each file &#8211; the actual
+time depends on the file size and the compression algorithm / file type used
+for the original file. At approximately 10 seconds per file a 10,000 song
+collection will take approximately 27 hours! </p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l30 level1 lfo29'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>A notebook to keep track of what you think may
+need checking later such as any modified tandas.</p>
+
+<h2><a name="_Toc432261608"><span style='mso-ansi-language:EN-GB'>Workflow</span></a><span
+style='mso-ansi-language:EN-GB'><o:p></o:p></span></h2>
+
+<p class=UserGuide>The processing requires the waveform files for all the songs
+in the library. Under normal circumstances, the <span class="notranslate">Tanda Player</span> only generates
+these as required. I.e. if the configuration does not require these (i.e. not
+for headphone use or during live player use) these files will not exist yet. If
+they have been produced already these files are usable by this process.</p>
+
+<p class=UserGuide>Step 0 clears all previous results and initialises the
+required files used to store results</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_1" o:spid="_x0000_i1037"
+ type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 20.53.02.png"
+ style='width:1in;height:36pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image345.png" o:title="Screen Shot 2019-04-26 at 20.53.02.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=74 height=38
+src="TPUG_files/image346.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 20.53.02.png"
+v:shapes="Picture_x0020_1"><![endif]></span></p>
+
+<p class=UserGuide>Step 1 is therefore to generate all the required image
+files. </p>
+
+<p class=UserGuide>It is invoked by clicking this button:</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_161" o:spid="_x0000_i1036"
+ type="#_x0000_t75" style='width:113pt;height:41pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image347.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=115 height=43
+src="TPUG_files/image348.png" v:shapes="Picture_x0020_161"><![endif]></span></p>
+
+<p class=UserGuide>This step also creates a “fingerprint” or “signature” of the
+waveform which can then be used for similarity testing. This process may take
+quite a long time to run the first time. Subsequent runs (i.e. after you add a
+few new songs to your library) may just take a few seconds to complete.<span
+style="mso-spacerun:yes">  </span>Therefore, for the first run it is recommended
+to run this overnight.<span style="mso-spacerun:yes">  </span>Because this
+process runs both in the <span class="notranslate">Tanda Player</span> and in the Web Browser both need to be
+left switched on for the entire time and in particular, the computer on which
+the web browser is being used must be set up so that it will not go to sleep
+after an hour or so to save power. Simply go into your computer settings for
+power saving or similar and disable these temporarily.</p>
+
+<p class=UserGuide>Once it has completed it is recommend that you save the
+state of the application.<span style="mso-spacerun:yes">  </span>However, even
+without saving the state, subsequent runs of the same process will complete
+much more quickly because the underlying waveform files will now exist on the
+USB device and only missing signatures will be generated.</p>
+
+<p class=UserGuide>Step 2 is simply to go through the results.</p>
+
+<p class=UserGuide>The results are presented as a list of files:</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_3" o:spid="_x0000_i1035"
+ type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 20.54.20.png"
+ style='width:451pt;height:179pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image349.png" o:title="Screen Shot 2019-04-26 at 20.54.20.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=453 height=181
+src="TPUG_files/image350.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 20.54.20.png"
+v:shapes="Picture_x0020_3"><![endif]></span></p>
+
+<p class=UserGuide>For each group of possibly matching songs, there is a
+check-box<span style="mso-spacerun:yes">  </span>you can tick once you have
+looked at this group.<span style="mso-spacerun:yes">  </span>This is just for
+your own use and allows you to see which you have done and which are still to
+do.<span style="mso-spacerun:yes">  </span>These check boxes are saved when you
+click the save state button:</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_163" o:spid="_x0000_i1034"
+ type="#_x0000_t75" style='width:80pt;height:35pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image351.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=82 height=37
+src="TPUG_files/image352.png" v:shapes="Picture_x0020_163"><![endif]></span></p>
+
+<p class=UserGuide>You must save the state before you start work on the list!</p>
+
+<p class=UserGuide>The groups are centered on a file whose filename is given in
+the group row.<span style="mso-spacerun:yes">  </span>The large red number on
+the row is a count of how many pixels were different between the given filename
+and the most different possible match to this file.</p>
+
+<p class=UserGuide>To see the matches click the view button. To hide the
+details again, click the same button (which will rename itself to “hide”).</p>
+
+<p class=UserGuide>Please note that the songs with a difference of zero </p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4" o:spid="_x0000_i1033"
+ type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 20.56.30.png"
+ style='width:451pt;height:31pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image353.png" o:title="Screen Shot 2019-04-26 at 20.56.30.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=453 height=33
+src="TPUG_files/image354.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 20.56.30.png"
+v:shapes="Picture_x0020_4"><![endif]></span></p>
+
+<p class=UserGuide>are most likely to be exact copies of the original
+file.<span style="mso-spacerun:yes">  </span>However, ripping the same song
+from a CD and converting it to an MP3 or M4A file for example will produce
+differences because, MP3 in particular, people often choose to compress their
+music collection to take less disk space at the expense of losing some of the
+data in the original file. The compression process attempts to remove sounds
+that the human ear will not miss but these sounds may show up in the waveforms
+and so different compression levels and different file formats will lead to
+different waveforms.<span style="mso-spacerun:yes">  </span>Because of these
+differences, the process requires a level of tolerance when comparing waveforms
+and this is set by the slider:</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_165" o:spid="_x0000_i1032"
+ type="#_x0000_t75" style='width:222pt;height:26pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image355.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=224 height=28
+src="TPUG_files/image356.png" v:shapes="Picture_x0020_165"><![endif]></span></p>
+
+<p class=UserGuide>The default value will result in a few mis-matches but it
+also allows matches where the tempo is different or some processing has taken
+place to remove hiss etc.<span style="mso-spacerun:yes">  </span>Lower values
+will result in more accurate matches but may miss some too!<span
+style="mso-spacerun:yes">  </span>Once a new value is set, click the re-scan
+button to use this new level when comparing files.<span
+style="mso-spacerun:yes">  </span>You are encouraged to try larger values once
+you have cleared the more common matches.</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_166" o:spid="_x0000_i1031"
+ type="#_x0000_t75" style='width:131pt;height:38pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image357.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=133 height=40
+src="TPUG_files/image358.png" v:shapes="Picture_x0020_166"><![endif]></span></p>
+
+<p class=UserGuide>The scanning process speed (time taken) depends on the size
+of the collection. The algorithm used is extremely simple: it compares each
+file with each of the others!<span style="mso-spacerun:yes">  </span>Therefore
+the more you have, the longer the scan for each file takes. As a guide, a
+collection of 10,000 songs can be scanned in under 3 hours.</p>
+
+<h4><span lang=EN-US>Mis-Matching</span></h4>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_167" o:spid="_x0000_i1030"
+ type="#_x0000_t75" style='width:451pt;height:118pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image359.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=453 height=120
+src="TPUG_files/image360.png" v:shapes="Picture_x0020_167"><![endif]></span></p>
+
+<p class=UserGuide>The above picture shows the results for two songs where the
+waveforms (to a human eye) are not truly similar. By looking at the waveform’s
+shape and the filenames and titles and artists etc. it should be possible to
+reject this match. </p>
+
+<p class=UserGuide>If it is not truly obvious, then clicking the rows for each
+song will cause them to play and it should be obvious then that these do not
+match. </p>
+
+<p class=UserGuide>Simply “hide” the details again and check the box to show
+that you have looked at this match so that you do not need to do it again. Then
+move on to the next match.</p>
+
+<h4><span lang=EN-US>Comparing</span></h4>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_168" o:spid="_x0000_i1029"
+ type="#_x0000_t75" style='width:451pt;height:225pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image361.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=453 height=227
+src="TPUG_files/image362.png" v:shapes="Picture_x0020_168"><![endif]></span></p>
+
+<p class=UserGuide>The above shows a case where four songs appear to match. A
+quick look at the waveforms shows that at least the first three are likely to
+be the same, the last one is very similar but who knows! (Note that in the
+above, the first file is 3 seconds shorter than the second! &#8211; possibly
+the result of one file or the other being re-mastered (sped up or slowed down)
+or it could be leading or trailing silence)</p>
+
+<p class=UserGuide>The “Differences” is a count of differing pixels to the song
+the group is based on. It must not be used as a way of determining how good a
+recording it is &#8211; listen to the song! (For example, if the really bad
+version of a song was the one the group was based on then it would have a
+difference score of zero and all the good versions would have high scores indicating
+that they are different from the bad version &#8211; The score is just an
+indicator of similarity to the first song in the list and nothing else!)<span
+style="mso-spacerun:yes">  </span>If the count is zero it is extremely likely
+that they are identical copies of the same song and only one of them needs to
+be kept.<span style="mso-spacerun:yes">  </span>For other differences, you may
+decide to keep a few copies if for example the sound quality differs because
+you may want either good or bad sounds to match up other songs when making a
+tanda. However, each copy of a song will require you to go through and classify
+it and so the more you leave, the more classifying you will need to do later!</p>
+
+<p class=UserGuide>The “gain” value should be between 0 and -20 dB in order to
+not lose output sound levels from the <span class="notranslate">Tanda Player</span>. The player uses the
+quietest song in your collection as the reference song and this controls the
+maximum output possible.<span style="mso-spacerun:yes">  </span>See the
+normalisation page in the setup app.<span style="mso-spacerun:yes">  </span>If
+you have a file whose gain is too low (below -20 dB) it will be shown either in
+orange as a warning or red and these should be either deleted if better
+versions are available or these should be removed and replaced with normalised
+versions of these recordings &#8211; normalisation can be achieved using
+commercial software. </p>
+
+<p class=UserGuide>When listening alone does not allow the best version to be identified,
+then the following rough guide may be used &#8211; but if you cannot tell by
+listening it probably does not matter! </p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l13 level1 lfo30'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Keep the song which is easiest for <span class="notranslate">Tanda Player</span>
+to play (see below)</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l13 level1 lfo30'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Keep the least distorted version &#8211; for
+example, files downloaded from sites such as YouTube are likely to suffer in
+sound quality due to the sites adjustment of uploaded files. Therefore if
+possible, remove the downloaded versions and keep those from other sources.</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l13 level1 lfo30'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Keep the song which has a green background to
+the Gain figure (‘Green’ indicates a value between 0 and -20 dB) (See below)</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l13 level1 lfo30'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Keep the song whose waveform has the most
+variation in it &#8211; this is likely to sound more dynamic</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l13 level1 lfo30'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Keep the song you have already classified
+especially if it is already in a tanda!</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l13 level1 lfo30'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Keep the best audio file format (see below).</p>
+
+<p class=UserGuide>The <span class="notranslate">Tanda Player</span> is not a powerful computer and some music
+file compression algorithms require a lot of computing power to unpack the data
+in them in order to play them. The worst format identified to date is the “APE”
+file format.<span style="mso-spacerun:yes">  </span>Although technically a good
+format in that it is does not lose any data quality it is computer-intensive to
+play and <span class="notranslate">Tanda Player</span> can hesitate or skip during playback of these files.<span
+style="mso-spacerun:yes">  </span>It is recommended therefore that for the
+<span class="notranslate">Tanda Player</span>’s version of these files you should make either a FLAC or better
+still a M4A file with parameters set to keep a high quality if not lossless.</p>
+
+<p class=UserGuide>Also, at the time of writing, the <span class="notranslate">Tanda Player</span> sends the
+files to the user’s own web browser for playing through headphones and APE
+files are not generally supported and so the DJ will not be able to listen to
+these on headphones!</p>
+
+<p class=UserGuide>Keep the files with the formats that lose the least
+information. Typically MP3 files from a few years back are likely to have been
+created to preserve disk space at the cost of losing data.<span
+style="mso-spacerun:yes">  </span>Also, MP3 files cannot be edited and re-saved
+without losing more data and eventually ending up with a file that sounds
+horrible.<span style="mso-spacerun:yes">  </span>So when other formats are
+available, delete the MP3 version.<span style="mso-spacerun:yes">  </span>By
+contrast, FLAC files are lossless in terms of data and are easy to play and so
+these are a good option. In the middle of the pack are M4A files which are
+capable of being very high quality with no loss of sound quality (these can be
+edited again and again with virtually no loss in sound quality). However, they
+can still be used to compress heavily resulting in just as poor files as MP3
+can and so listen to all available options and pick one.</p>
+
+<p class=UserGuide>Author<span lang=EN-US style='font-family:"MS Mincho";
+mso-ascii-font-family:bodyLightFont;mso-fareast-font-family:"MS Mincho";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:bodyLightFont'>’</span>s
+Opinion:</p>
+
+<p class=UserGuide>Do not be tempted to convert files from one format to
+another!</p>
+
+<p class=UserGuide>MP3 files lose too much data in their creation to be able to
+be re-converted. &nbsp;Do not attempt to re-convert a file that has been an
+MP3. &nbsp;As a rule the compression algorithm for MP3 throws away about 90% of
+the data leaving just 1 Mbyte of data for 1 minute of music.</p>
+
+<p class=UserGuide>FLAC by comparison throws nothing away in the creation
+process and so, like WAV files they are perfect copies of the original and if
+need be, they can be reproduced into any other format - so these are good to
+keep - unless you are short of disk space.</p>
+
+<p class=UserGuide>M4A is similar to MP3 in that it is a compression algorithm
+but unlike MP3, you can open them up and re-convert them in some way and
+re-save as M4A without significant loss - tests have shown that you can
+re-encode from M4A back to M4A about 100 times before you lose too much sound
+quality. &nbsp;Also people generally use M4A more like a ZIP file for
+documents, they have the settings which make it possible to get back nearly
+everything perfectly.</p>
+
+<p class=UserGuide>So DO NOT CONVERT anything. &nbsp;Keep MP3 if it is the best
+version of a song!</p>
+
+<p class=UserGuide>Otherwise, if you have FLAC and MP3, delete the MP3, if you
+have FLAC and M4A keep the FLAC, if you have M4A and MP3 then keep the M4A etc.
+&nbsp;BUT ONLY IF THE FILE BEING DELETED IS NOT AS GOOD A VERSION OF THE SONG!
+&nbsp;It’s OK to delete a FLAC file and keep an MP3 if that is the better
+version in your opinion.</p>
+
+<p class=UserGuide><o:p>&nbsp;</o:p></p>
+
+<p class=UserGuide>But as a special note: if you have APE files (which like
+FLAC does not lose anything in the creation) and you have an M4A or MP3, then
+remove the APE file. &nbsp;<span class="notranslate">Tanda Player</span> just is not powerful enough to keep up
+with the processing required to decode these in real time whilst performing all
+the other actions such as manipulating playlists or adjusting volumes etc.
+&nbsp;Also, your laptops or computers will not play APE files through the web
+browser, so you will not be able to listen to them on headphones - this would
+require the <span class="notranslate">Tanda Player</span> to convert these on the fly to say M4A for you to
+listen and that is yet more work &#8211; As a result, APE is not fully supported
+even though technically it can play them. &nbsp;Perhaps the more powerful
+future version using a Raspberry Pi 3B+ version will be able to cope better
+with these but for now, avoid them if possible. &nbsp;As a contradiction to the
+above: <b style='mso-bidi-font-weight:normal'>If you only have APE versions,
+then perhaps consider converting these into FLAC or M4A using some other
+software.&nbsp;<o:p></o:p></b></p>
+
+<p class=UserGuide>Note too that the differences score is not an indication of
+quality of the song. &nbsp;Imagine you pick up a random thing - now describe
+how different other things are to it. An identical thing would have zero
+differences, and the more the differences increase, the less like the original
+item it is - but remember, the original thing is still selected at random so it
+might be a rubbish version of the song! &nbsp;So if you listen to the songs and
+decide to keep the one with the most differences - that’s OK - you’ve said its
+the best version - the difference score means nothing apart from a way to group
+items that may be similar.</p>
+
+<p class=UserGuide>To mark a song as not required, click the delete button on
+the row. The row will turn red. It is not deleted at this point &#8211; just
+marked.<span style="mso-spacerun:yes">  </span>Clicking the save state button
+will keep a record of which ones you have marked for deletion.</p>
+
+<p class=UserGuide>Step3<span style="mso-spacerun:yes">  </span>- For each file
+you delete that is part of a Tanda, you need to state which file to use as the
+replacement.</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5" o:spid="_x0000_i1028"
+ type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 21.03.03.png"
+ style='width:451pt;height:110pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image363.png" o:title="Screen Shot 2019-04-26 at 21.03.03.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=453 height=112
+src="TPUG_files/image364.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 21.03.03.png"
+v:shapes="Picture_x0020_5"><![endif]></span></p>
+
+<p class=UserGuide>If you choose to remove the version that is not currently in
+a Tanda, it will simply be highlighted in red.</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_7" o:spid="_x0000_i1027"
+ type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 21.04.15.png"
+ style='width:451pt;height:108pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image365.png" o:title="Screen Shot 2019-04-26 at 21.04.15.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=453 height=110
+src="TPUG_files/image366.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 21.04.15.png"
+v:shapes="Picture_x0020_7"><![endif]></span></p>
+
+<p class=UserGuide>However, if you decide to remove the version that is in the
+Tanda already, then a window will appear in which you can see the songs in the
+tandas which include this song and also a list of the songs in this current
+group .<span style="mso-spacerun:yes">  </span>If you wish to proceed, you can
+select an alternative song and this will be automatically written to the tandas
+in place of the original song &#8211; NOTE THIS WILL SAVE IMMEDIATELY IF YOU
+PRESS THE SWAP BUTTON regardless of whether you then go on to actually delete
+the files using the “Delete ??? Versions” button at the top of the page.</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_6" o:spid="_x0000_i1026"
+ type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 21.03.29.png"
+ style='width:451pt;height:255pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image367.png" o:title="Screen Shot 2019-04-26 at 21.03.29.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=453 height=257
+src="TPUG_files/image368.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 21.03.29.png"
+v:shapes="Picture_x0020_6"><![endif]></span></p>
+
+<p class=UserGuide>This window appears because the song being deleted has been
+added to one or more tandas. Each Tanda is shown and the file being removed is
+highlighted.<span style="mso-spacerun:yes">  </span>You can simply cancel and
+no action will take place or you can swap the highlighted file with a selected
+alternative.<span style="mso-spacerun:yes">  </span>If you mark for deletion
+all but one song before deleting the one already in the tandas then this will
+be the only version given to choose from.<span style="mso-spacerun:yes"> 
+</span>To make the swap you must select the file!</p>
+
+<p class=UserGuide>NOTE you may find the main list is redrawn and you lose your
+place. Therefore make a note where you were or use the checkboxes to help
+identify which have been examined so far.</p>
+
+<p class=UserGuide>Step 4 &#8211; Once you are happy with all the deletions you
+plan on making, click the delete button:</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_8" o:spid="_x0000_i1025"
+ type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 21.11.32.png"
+ style='width:108pt;height:32pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image369.png" o:title="Screen Shot 2019-04-26 at 21.11.32.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=110 height=34
+src="TPUG_files/image370.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-26 at 21.11.32.png"
+v:shapes="Picture_x0020_8"><![endif]></span></p>
+
+<p class=UserGuide>This step will physically delete the files from your USB
+device. A re-start of the <span class="notranslate">Tanda Player</span> is required, once it has finished, to
+clean up the library. </p>
+
+<p class=UserGuide>This may result in some tandas becoming invalid if
+alternative files were not selected. Invalid tandas can be searched for by
+searching for the word ‘invalid’ and once suitable replacements for the files
+have been found, the word ‘invalid’ can be removed from the tanda’s name prior
+to saving.</p>
+
+<p class=UserGuide>Invalidated playlists are not easily fixed!</p>
+
+<p class=UserGuide>Once complete, the “restart” button is located in the top
+left corner out of the way! </p>
+
+<p class=UserGuide>To re-process after making changes/deletions, please
+re-start the <span class="notranslate">Tanda Player</span> and clear the system by performing a full reset.<span
+style="mso-spacerun:yes">  </span>The creation of signatures is then required
+etc. but it should be quicker the second time around.</p>
+
+<p class=UserGuide><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
+
+				<div class="TPUG_navigation">
+					<a href="help_section_22.html">&lt;&lt;&lt; Previous Section</a>
+					<a href="help_section_0.html">Index</a>
+					
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

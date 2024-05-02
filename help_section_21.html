@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+		<title>Tanda Player - User Guide OnLine</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+* {
+    color: #606060 !important;
+}
+body {
+	background-color: black;
+}
+section .notranslate {
+	margin: 0.15em;
+	font-style: inherit;
+	font-size: inherit;
+}
+
+img {
+	margin-left: 1em;
+}
+
+header, section {
+	border-radius: 15px;
+	background-color: white;
+	padding: 1em;
+	max-width: 1200px;
+	margin: 1em auto;
+}
+
+header ul {
+	    list-style-position: inside;
+}
+header li a {
+	text-decoration: underline !important;
+}
+
+header h1 {
+	font-family: myFirstFont;
+    font-size: 90px;
+    margin: 0.1em;
+}
+
+section * {
+	//font-family: Cambria!important;
+}
+
+section h1 {
+	font-size: 1.75em;
+}
+section h2, section h3 {
+	font-size: 1.25em;
+}
+
+#wrapper {
+}
+
+.TPUG_navigation {
+	margin: 1em;
+}
+
+.TPUG_navigation a{
+	font-size: 1.2em;
+	margin: 1em;
+}
+
+header li {
+	list-style-type: disc !important;
+}
+
+li {
+	list-style: none;
+}
+
+section a:link, section a:visited {
+	color: blue !important;
+}
+section li a:link, section a:visited {
+	text-decoration: none !important;
+}
+span.index_1 {
+	font-size: 1.1em;
+	line-height: 2.4em;
+	margin: 0.3em;
+	margin-top: 1em;
+	font-weight: bolder;
+}
+span.index_2 {
+	font-size: 1em;
+	line-height: 1.75em;
+	margin-left: 2em;
+}
+span.index_3 {
+	font-size: 0.9em;
+	line-height: 1.5em;
+	margin-left: 4em;
+}
+
+h1 {
+	margin-top: 0px !important;
+}
+
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+			</header>
+			<script src="../js/header.js" type="text/javascript"></script>
+			<section>
+				<div class="TPUG_navigation">
+					<a href="help_section_20.html">&lt;&lt;&lt; Previous Section</a>
+					<a href="help_section_0.html">Index</a>
+					<a href="help_section_22.html">Next Section &gt;&gt;&gt;</a>
+				</div>
+				<h1><a name="_Toc432261596"><span lang=EN-US>Diagnosing Faults</span></a></h1>
+
+<h2><a name="_Toc432261597"><span lang=EN-US>No sound and skips through a
+playlist</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>This has been traced to a loose connection
+between the Raspberry Pi computer and the sound card - The issue is usually
+reported as “no soundcard”.<span style="mso-spacerun:yes">  </span>Obviously
+there is one &#8211; it’s in the case! But it seems it can become loose.<span
+style="mso-spacerun:yes">  </span>Go to the setup/configuration app and click
+on the “System State” tab. This should show the following but if not, then try
+the following fix.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1048" type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-30 at 18.01.23.png"
+ style='width:415pt;height:46pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image323.png" o:title="Screen Shot 2019-04-30 at 18.01.23.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=417 height=48
+src="TPUG_files/image324.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2019-04-30 at 18.01.23.png"
+v:shapes="_x0000_i1048"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US>The solution is simply to open the case, pull
+the sound card carefully off the lower computer and then push back on.<span
+style="mso-spacerun:yes">  </span>This act seems to clean the contacts and
+usually fixes the problem.<span style="mso-spacerun:yes">  </span><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1047" type="#_x0000_t75"
+ alt="Description: Macintosh HD:Users:david:Desktop:assembly4-1024x768-1.jpg"
+ style='width:415pt;height:311pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image325.jpg" o:title="assembly4-1024x768-1.jpg"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=417 height=313
+src="TPUG_files/image326.png"
+alt="Description: Macintosh HD:Users:david:Desktop:assembly4-1024x768-1.jpg"
+v:shapes="_x0000_i1047"><![endif]></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US>Remove the two screws as shown missing in
+the picture. Then gently pull the lid from the base. This should separate the
+two circuit boards as one is connected to the lid and one to the base. Once
+done, just push back together again and re-assemble.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The cause is possibly a little rough
+treatment causing the computer and sound card to move apart from each other a
+little bit. </span></p>
+
+<h2><a name="_Toc432261598"><span lang=EN-US>The software</span></a></h2>
+
+<p class=UserGuide>The <span class="notranslate">Tanda Player</span> is still a prototype and there may be
+issues in use.<span style="mso-spacerun:yes">  </span>If you can reproduce an
+issue and if it prevents you from normal use then please contact David Goddard
+for assistance, as it may be possible to fix the issue.</p>
+
+<h2><a name="_Toc432261599"><span lang=EN-US>No network</span></a></h2>
+
+<p class=UserGuide>When the system starts up the Wifi-hotspot network should
+become available within about 10 to 15 seconds.<span style="mso-spacerun:yes"> 
+</span>Although you can connect to this network the actual <span class="notranslate">Tanda Player</span>
+applications will not yet be available.</p>
+
+<p class=UserGuide>If you do not get a network to connect to then it is likely
+to be either the main micro-SD card with the operating system on has become
+corrupt or the hardware has failed.</p>
+
+<p class=UserGuide>Check power supplies and check the SD card is firmly in
+place.</p>
+
+<h2><a name="_Toc432261600"><span lang=EN-US>No <span class="notranslate">Tanda Player</span> application after
+2 minutes</span></a></h2>
+
+<p class=UserGuide>The software should start the web service up within a couple
+of minutes depending upon how many songs you have added etc.</p>
+
+<p class=UserGuide>If there is no sign of the application starting then the
+most likely cause is the corruption of the USB memory stick that the music is
+kept on. There are several reasons that this may occur:</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo23'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>The device is coming to the end of its natural
+life and beginning to fail</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo23'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>The <span class="notranslate">Tanda Player</span> was switched off or crashed
+without using the button on the home page to stop the device.</p>
+
+<p class=UserGuide style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo23'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>No USB card?</p>
+
+<p class=UserGuide>It is always recommended to have a backup of anything on the
+USB devices as they can naturally fail.</p>
+
+<h2><a name="_Toc432261601"><span lang=EN-US>Recovering from a crash</span></a></h2>
+
+<p class=UserGuide>If your USB memory stick has acquired some corrupt files and
+as a result the system will not start, verify that the player itself is still
+OK by putting a new USB device in the player and let it initialize it. If the
+player then starts up the fault is most likely to be with one of the database
+files.</p>
+
+<p class=UserGuide>Each time the player starts up it copies all the database files
+to a folder also on the USB device. There are ten copies of the database in
+all.</p>
+
+<p class=UserGuide>In the top level folder of the backups is a text file with a
+number in it which is the number of the last back up written.</p>
+
+<p class=UserGuide>Put the USB device in a laptop and attempt to fix the
+device. Once done look at the backup folder and identify the last backup taken
+when you know it last worked OK. Simply copy the entire contents of this backup
+folder to the top level folder of the USB device replacing the corrupt database
+files with good ones.</p>
+
+<p class=UserGuide>Re-start the <span class="notranslate">Tanda Player</span>.</p>
+
+<h2><a name="_Toc432261602"><span lang=EN-US>Bad files</span></a></h2>
+
+<p class=UserGuide>Bad files are files found in the music folders that cannot
+be played at all or play but with audible artifacts such clicks or skips in the
+sound. Or a file may just suddenly stop.</p>
+
+<p class=UserGuide>The <span class="notranslate">Tanda Player</span> is fairly tolerant of files typically found
+in music libraries alongside the songs themselves. For example album artwork is
+often stored in JPEG files in the same folders as the tracks. Similarly
+operating systems add files such as “desktop.ini” to folders.</p>
+
+<p class=UserGuide>Rather than have an exhaustive list of file types to avoid,
+the system will instead try to play most things the first time you add it to
+the system. Upon opening the files it will determine whether it is a playable
+music file or not and even for those music files it will also check that it can
+be played properly. It does this by scanning the entire file at around 20 times
+normal playing speed in the background &#8211; about 5 to 10 seconds for most
+songs. If a file has some encoding issues it marks the files as such. Similarly
+if a file is simply not a music file it will be marked as such. </p>
+
+<p class=UserGuide>Marked files may be hidden from the <span class="notranslate">Tanda Player</span>’s normal
+operations in the same way the user can hide a song they do not wish to include
+in their collection.</p>
+
+<p class=UserGuide>In the configuration page there is a tab for “Music file
+warnings &amp; errors” and this lists all songs that either the user or the
+system has hidden from use.<span style="mso-spacerun:yes">  </span>It also
+lists those that appear OK but some errors were reported during the decoding.<span
+style="mso-spacerun:yes">  </span>From here you can click a delete button to
+remove the file from the USB drive, you can click OK and it will updated to no
+longer be hidden the next time you start the system or you can click elsewhere
+on the row for the track to play it in order to check whether it does appear to
+play properly or not.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US>NOTE
+&#8211; many songs are badly encoded but otherwise playable and errors such as
+“Skipping … junk” is not normally an audible issue. <span
+style="mso-spacerun:yes"> </span>However, “file growing?” occurs where the file
+ended unexpectedly and the application simply wonders if it is being written at
+the same time such as by a streaming application. These are usually useless as
+music files and should be deleted. <o:p></o:p></span></b></p>
+
+<p class=UserGuide>The decoding errors are typically caused by corruptions at
+the time of encoding. They may or may not be audible as minor jitters in the
+playback or entire songs suddenly ending. For this reason you can play the
+marked songs by clicking on their filename and they will play and then click OK
+if they play well enough or delete them if not.</p>
+
+<p class=UserGuide>It is not recommended to keep lots of bad files as they take
+up room in the database and slow down some operations unnecessarily.</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1046" type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-21 at 14.30.42.png"
+ style='width:414pt;height:44pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image327.png" o:title="Screen Shot 2018-04-21 at 14.30.42.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=416 height=46
+src="TPUG_files/image328.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-21 at 14.30.42.png"
+v:shapes="_x0000_i1046"><![endif]></span></p>
+
+<p class=UserGuide>To force a re-assessment of your files (for example if you
+start to notice some songs misbehaving.</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1045" type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-24 at 17.28.24.png"
+ style='width:2in;height:49pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image329.png" o:title="Screen Shot 2018-04-24 at 17.28.24.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=146 height=51
+src="TPUG_files/image330.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-24 at 17.28.24.png"
+v:shapes="_x0000_i1045"><![endif]></span></p>
+
+<p class=UserGuide>Once analysed you can remove songs individually
+(recommended) or remove the whole lot in one go.</p>
+
+<p class=UserGuide><span style="mso-spacerun:yes"> </span><span lang=EN-US
+style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1044" type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-24 at 17.28.39.png"
+ style='width:204pt;height:43pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image331.png" o:title="Screen Shot 2018-04-24 at 17.28.39.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=206 height=45
+src="TPUG_files/image332.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-24 at 17.28.39.png"
+v:shapes="_x0000_i1044"><![endif]></span></p>
+
+<p class=UserGuide>If you tag some songs as unsuitable for use in the Tanda
+Player then you can remove all of those in one go too.</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1043" type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-24 at 17.28.34.png"
+ style='width:189pt;height:50pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image333.png" o:title="Screen Shot 2018-04-24 at 17.28.34.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=191 height=52
+src="TPUG_files/image334.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-24 at 17.28.34.png"
+v:shapes="_x0000_i1043"><![endif]></span></p>
+
+<p class=UserGuide>Once you have either deleted some files or marked them as OK
+after listening to them you will need to re-start the <span class="notranslate">Tanda Player</span> so that it
+re-scans the USB device and builds a new database from that information.</p>
+
+<p class=UserGuide><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1042" type="#_x0000_t75" alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-24 at 17.28.17.png"
+ style='width:143pt;height:48pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="TPUG_files/image335.png" o:title="Screen Shot 2018-04-24 at 17.28.17.png"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=145 height=50
+src="TPUG_files/image336.png"
+alt="Description: Macintosh HD:Users:david:Desktop:Screen Shot 2018-04-24 at 17.28.17.png"
+v:shapes="_x0000_i1042"><![endif]></span></p>
+
+<p class=UserGuide><o:p>&nbsp;</o:p></p>
+
+
+				<div class="TPUG_navigation">
+					<a href="help_section_20.html">&lt;&lt;&lt; Previous Section</a>
+					<a href="help_section_0.html">Index</a>
+					<a href="help_section_22.html">Next Section &gt;&gt;&gt;</a>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
